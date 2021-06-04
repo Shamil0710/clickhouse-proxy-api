@@ -1,7 +1,7 @@
 clickhouse:
-#  TODO Понять по какому IP коннектится к ДБ на виртуальной машине
-  address: jdbc:clickhouse://10.0.2.2:8123/
+  address: jdbc:clickhouse://localhost/:8123/
   username:
   password:
-  db: test
-  socketTimeout: 600000
+  db: datasets
+#  socketTimeout: 600000
+  socketTimeout: 60

@@ -39,4 +39,22 @@ public class ClickHouseService {
         }
         return null;
     }
+
+    public void testSqlRequest() {
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet result = statement.executeQuery("SELECT COLUMNS(URL) FROM datasets.hits_v1");
+            ResultSetMetaData resultSetMetaData = result.getMetaData();
+            List<Map<String, String>> list = new ArrayList<>();
+            while (result.next()) {
+                Map<String, String> hashMap = new HashMap<>();
+                for (int i = 1; i <= resultSetMetaData.getColumnCount(); i++) {
+                    System.out.println(resultSetMetaData.getColumnName(i));
+                    System.out.println(result.getString(resultSetMetaData.getColumnName(i)));
+                }
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }
