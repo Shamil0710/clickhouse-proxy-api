@@ -1,4 +1,4 @@
-//package clickhouse;
+//package com.project.clickhouseproxyapi.clickhouse;
 //
 //import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.context.annotation.Bean;
@@ -48,11 +48,11 @@
 //    public static Connection getConn() {
 //        ClickHouseConnection conn = null;
 //        ClickHouseProperties properties = new ClickHouseProperties();
-//        properties.setUser(clickhouseUsername);
-//        properties.setPassword(clickhousePassword);
-//        properties.setDatabase(clickhouseDB);
-//        properties.setSocketTimeout(clickhouseSocketTimeout);
-//        ClickHouseDataSource clickHouseDataSource = new ClickHouseDataSource(clickhouseAddress,properties);
+////        properties.setUser(clickhouseUsername);
+////        properties.setPassword(clickhousePassword);
+//        properties.setDatabase("datasets");
+//        properties.setSocketTimeout(600000);
+//        ClickHouseDataSource clickHouseDataSource = new ClickHouseDataSource("jdbc:clickhouse://localhost/:8123/",properties);
 //        try {
 //            conn = clickHouseDataSource.getConnection();
 //            return conn;

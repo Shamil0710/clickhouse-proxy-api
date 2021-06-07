@@ -3,5 +3,4 @@ clickhouse:
   username:
   password:
   db: datasets
-#  socketTimeout: 600000
-  socketTimeout: 60
+  socketTimeout: 600000
