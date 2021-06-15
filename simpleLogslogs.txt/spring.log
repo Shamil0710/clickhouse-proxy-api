@@ -1,0 +1,24 @@
+2021-06-07 17:25:42.753  INFO 13276 --- [main] c.p.c.ClickhouseProxyApiApplication      : Starting ClickhouseProxyApiApplication using Java 11.0.11 on DESKTOP-2JJOE14 with PID 13276 (C:\Users\Msoft\IdeaProjects\clickhouse-proxy-api\target\classes started by Msoft in C:\Users\Msoft\IdeaProjects\clickhouse-proxy-api)
+2021-06-07 17:25:42.756  INFO 13276 --- [main] c.p.c.ClickhouseProxyApiApplication      : No active profile set, falling back to default profiles: default
+2021-06-07 17:25:42.853  WARN 13276 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-07 17:25:43.595  INFO 13276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-07 17:25:43.604  INFO 13276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-07 17:25:43.604  INFO 13276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-07 17:25:43.672  INFO 13276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-07 17:25:43.672  INFO 13276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 847 ms
+2021-06-07 17:25:43.711  INFO 13276 --- [main] ru.yandex.clickhouse.ClickHouseDriver    : Driver registered
+2021-06-07 17:25:44.175  INFO 13276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-07 17:25:44.184  INFO 13276 --- [main] c.p.c.ClickhouseProxyApiApplication      : Started ClickhouseProxyApiApplication in 1.746 seconds (JVM running for 2.427)
+2021-06-07 17:25:44.185  INFO 13276 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-07 17:25:44.186  INFO 13276 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-07 17:25:50.789  INFO 13276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-07 17:25:50.789  INFO 13276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-07 17:25:50.790  INFO 13276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-06-07 17:25:50.815  INFO 13276 --- [http-nio-8080-exec-1] c.p.clickhouseproxyapi.aop.AopLogging    : Method Name : testAnot | Args => [] Time: 2021-06-07T17:25:50.815029900
+2021-06-07 17:25:50.823  INFO 13276 --- [http-nio-8080-exec-1] c.p.clickhouseproxyapi.aop.AopLogging    : No value
+2021-06-07 17:25:50.940  INFO 13276 --- [http-nio-8080-exec-3] c.p.clickhouseproxyapi.aop.AopLogging    : Method Name : testAnot | Args => [] Time: 2021-06-07T17:25:50.940672300
+2021-06-07 17:25:50.940  INFO 13276 --- [http-nio-8080-exec-3] c.p.clickhouseproxyapi.aop.AopLogging    : No value
+2021-06-07 17:25:51.103  INFO 13276 --- [http-nio-8080-exec-2] c.p.clickhouseproxyapi.aop.AopLogging    : Method Name : testAnot | Args => [] Time: 2021-06-07T17:25:51.103393400
+2021-06-07 17:25:51.104  INFO 13276 --- [http-nio-8080-exec-2] c.p.clickhouseproxyapi.aop.AopLogging    : No value
+2021-06-07 17:25:51.276  INFO 13276 --- [http-nio-8080-exec-4] c.p.clickhouseproxyapi.aop.AopLogging    : Method Name : testAnot | Args => [] Time: 2021-06-07T17:25:51.276901900
+2021-06-07 17:25:51.276  INFO 13276 --- [http-nio-8080-exec-4] c.p.clickhouseproxyapi.aop.AopLogging    : No value
