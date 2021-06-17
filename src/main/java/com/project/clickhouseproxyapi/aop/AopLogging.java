@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
+/**
+ * Пример использования АОП(Логирование при помощи анотации)
+ */
 @Aspect
 @Component
 public class AopLogging {
@@ -33,7 +36,7 @@ public class AopLogging {
 
     @AfterThrowing(value = "@annotation(com.project.clickhouseproxyapi.aop.annotations.CustomLogging)", throwing = "throwing")
     public void logAfter(JoinPoint joinPoint, Throwable throwing) {
-        if(throwing != null) {
+        if (throwing != null) {
             logger.info("Throw: {} ", throwing);
         } else {
             logger.info("No throw");
