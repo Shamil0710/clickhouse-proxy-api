@@ -1,0 +1,6 @@
+clickhouse:
+  address: jdbc:clickhouse://localhost/:8123/
+  username:
+  password:
+  db: datasets
+  socketTimeout: 600000
